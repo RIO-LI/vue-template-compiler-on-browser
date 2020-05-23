@@ -1,7 +1,7 @@
 {
-  "name": "y",
-  "version": "1.0.0",
-  "description": "vue template compiler on browser",
+  "name": "vue-template-compiler-on-browser",
+  "version": "0.0.1",
+  "description": "make vue-template-compiler library  run on browser",
   "main": "dist/vtc.js",
   "scripts": {
     "build:browser": "webpack && cp dist/vtc.js examples/browser",

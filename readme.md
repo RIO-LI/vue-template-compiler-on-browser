@@ -1,11 +1,25 @@
-Tutorial of how to author a library using [webpack](https://github.com/webpack/webpack).
+## vue-template-compiler-on-browser
 
 ### Outline
 
-This library exposes functionality to transalte numbers to words.
-It is trivial code but the aim is to bundle it using webpack.
+make `vue-template-compiler` library  run on browser
 
-### Features
+### API
 
-1. Bundling library code into all library targets ie CommonJS, AMD, ES2015 exports, UMD.
-2. Having `lodash` as an external dependency. 
+#### commonjs
+```Javascript
+const vtc = require("vue-template-compiler-on-browser");
+vtc.parseComponent(`your vue sfc file content string`);
+```
+
+#### ESM
+```Javascript
+import { parseComponent } from "vue-template-compiler-on-browser";
+vtc.parseComponent(`your vue sfc file content string`);
+```
+
+
+#### browser
+```Javascript
+window.vtc.parseComponent(`your vue sfc file content string`);
+```
